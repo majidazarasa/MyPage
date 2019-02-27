@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/initialize.css">
+    <title>Majid Azarasa</title>
+    <style>
+
+        *{
+            direction: rtl;
+        }
+
+        .banner{
+            background-color: #333;
+            color: white;
+            height: 200px;
+            text-align: left;
+        }
+        
+        .BannerImage{
+            height: 100%;
+            width: 100%;
+        }
+        
+        table {
+            width: 100%;
+            height: 100%;
+        }
+
+        #IndexBar{
+            width: 15%;
+        }
+
+        #ContentBar{
+            width: 70%;
+        }
+
+        #ConsiderationsBar {
+            width: 15%;
+        }
+
+        #IndexBar,
+        #ContentBar,
+        #ConsiderationsBar{
+            background-color: #f2f2f2;
+            margin: 2px;
+            padding: 2px;
+            font-family: Arial;
+            font-size: 20px;
+            text-align: center;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            border: 1px solid rgba(100, 100, 100, .3);
+            height: 250px;
+            color: blue;
+        }
+
+        .Content {
+            text-align: center;
+            border: 1px solid rgba(100, 100, 100, .2);
+            width: 30%;
+            height: 50%;
+            border-radius: 5px;
+            margin: 3px;
+            padding: 2px;
+            background-color: lightblue;
+            color: red;
+        }
+
+        #footer {
+            text-align: center;
+            background-color: whitesmoke;
+            border: 1px solid rgba(100, 100, 100, .3);
+            height: 50px;
+            color: mediumblue;
+        }
+
+        button{
+            background-color: lightblue;
+            width: 90%;
+            border: 2px solid blue;
+            border-radius: 10px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/main.js"></script>
+    <div class="container">
+        <div class="banner">
+            <img class="BannerImage" src="https://media.giphy.com/media/GoHMPGbqLqaOs/giphy.gif" alt="banner image">
+        </div>
+        <table>
+            <tr>
+                <td id="IndexBar">
+                    <br>
+                    <button type="button" onclick="ShowPersonalInfo()">مشخصات فردی</button>
+                    <br><br>
+                    <button type="button" onclick="ShowWorkExperience()">سوابق حرفه ای</button>
+                    <br><br>
+                    <button type="button" onclick="ShowPersonalSkills()">مهارت هاي تخصصي</button>
+                    <br><br>
+                    <button type="button" onclick="ShowTrainingInfo()">دوره ها و مدارک</button>
+                    <br><br>
+                    <button type="button" onclick="ShowLanguagesInfo()">مهارت در زبان خارجي</button>
+                    <br><br>
+                    <button type="button" onclick="ShowContactMeInfo()">تماس با من</button>
+                    <br><br>
+                </td>
+                <td id="ContentBar">
+                    <table>
+                        <tr>
+                            <td class="Content">
+                                <div>
+                                    <p id="P1"></p>
+                                </div>
+                            </td>
+                            <td class="Content">
+                                <div>
+                                    <p id="P2"></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Content">
+                                <div>
+                                    <p id="P3"></p>
+                                </div>
+                            </td>
+                            <td class="Content">
+                                <div>
+                                    <p id="P4"></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="ConsiderationsBar">
+                    <table>
+                        <tr class="Content">
+                            <td>
+                                <div class="banner">
+                                    <img class="BannerImage" src="https://media1.giphy.com/media/IxaB6pMrGsDiE/200w.webp?cid=3640f6095c5445c0384646554d12c52f" alt="banner image2">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Content">
+                            <td>
+                                <div class="banner">
+                                    <img class="BannerImage" src="https://media1.giphy.com/media/IxaB6pMrGsDiE/200w.webp?cid=3640f6095c5445c0384646554d12c52f" alt="Majid Azarasa Image">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div id="footer">
+            Copyright 2019 by Majid
+        </div>
+    </div>
+
+</body>
+
+</html>
